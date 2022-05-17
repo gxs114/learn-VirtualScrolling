@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .main {
+        margin-bottom: 2rem;
+        height: 500px;
+        overflow: auto;
+        border: 1px solid orange;
+      }
+      .item:nth-child(even) {
+        background: slateblue;
+      }
+      .item:nth-child(odd) {
+        background: #fefef4;
+      }
+      .item {
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+      }
+
+      .container {
+        border: 1px solid #ccc;
+        position: relative;
+      }
+    </style>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
